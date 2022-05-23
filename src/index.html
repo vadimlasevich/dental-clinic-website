@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Стоматологическая клиника</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <script src="js/app.min.js" defer></script>
+  </head>
+  <body>
+    @@include('html/header.html', {})
+    <main>
+      @@include('html/first-screen.html', {}) @@include('html/consultations.html', {}) @@include('html/stock.html', {})
+      @@include('html/services.html', {}) @@include('html/technology.html', {}) @@include('html/doctors.html', {})
+      @@include('html/assistant.html', {}) @@include('html/reviews.html', {}) @@include('html/licenses.html', {})
+      @@include('html/about.html', {}) @@include('html/record.html', {}) @@include('html/contacts.html', {})
+      <section class="contacts-map">
+        <img src="@images/contacts-map.jpg" alt="MAP" />
+      </section>
+      <div class="shadowed"></div>
+      @@include('html/modal-entry.html', {}) @@include('html/modal-participation.html', {}) @@include('html/modal-price.html', {})
+    </main>
+    @@include('html/footer.html', {})
+  </body>
+</html>

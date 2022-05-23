@@ -1,0 +1,81 @@
+.header {
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 0 3.6rem 0;
+  }
+  &__menu {
+    padding: 0.9rem 0;
+    background-color: var(--color-foam);
+  }
+}
+.header-top {
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+  &__address {
+    max-width: 19rem;
+    margin: 0 6rem;
+  }
+  &__address-title,
+  &__working-title {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.22em;
+    color: var(--color-pacific-blue);
+  }
+  &__address-title {
+    display: flex;
+    align-items: center;
+    &::before {
+      content: url("../images/pin.svg");
+      min-width: 12.6px;
+      height: 17.8px;
+      margin-right: 0.77rem;
+    }
+  }
+  &__address-subtitle {
+    font-weight: 600;
+  }
+  &__address-subtitle,
+  &__working-subtitle {
+    font-size: 1.4rem;
+    line-height: 1.21em;
+    margin-top: 1rem;
+  }
+  &__working {
+    max-width: 16rem;
+  }
+  &__working-title {
+    display: flex;
+    align-items: center;
+    &::before {
+      content: url("../images/time.svg");
+      width: 22px;
+      height: 22px;
+      margin-right: 0.8rem;
+    }
+  }
+  &__contacts {
+    display: flex;
+    align-items: center;
+  }
+  &__contacts-phones {
+    margin-left: 6rem;
+    text-align: right;
+  }
+  &__phone {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 140%;
+    letter-spacing: 0.025em;
+  }
+  &__phone-btn {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.21em;
+    color: var(--color-pacific-blue);
+  }
+}

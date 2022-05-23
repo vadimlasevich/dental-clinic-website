@@ -1,0 +1,33 @@
+.licenses {
+  padding: 11.4rem 0 3.4rem 0;
+  &__slider {
+    margin-top: 3rem;
+    position: relative;
+  }
+}
+.licenses-slider {
+  &__container {
+    overflow: hidden;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    min-width: 25%;
+  }
+  &__button {
+    background: #bdf8f9;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  &__button-left {
+    left: 0;
+  }
+  &__button-right {
+    right: 0;
+  }
+  &__dots {
+    bottom: -3.4rem;
+  }
+}

@@ -1,0 +1,71 @@
+.first-screen {
+  background-image: url("../images/first-screen-bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  & .container {
+    position: relative;
+  }
+  &__content {
+    padding: 9.2rem 0 13.2rem;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 120%;
+    width: 75%;
+    margin-bottom: 0.51em;
+  }
+  &__subtitle {
+    text-align: left;
+    width: 45%;
+    margin: 0;
+  }
+  &__text {
+    font-size: 2.4rem;
+    line-height: 140%;
+    width: 45%;
+    margin: 2.5em 0;
+    & span {
+      color: var(--color-pacific-blue);
+    }
+  }
+  &__button {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.22em;
+    padding: 0.9rem 4.55rem;
+  }
+  &__items {
+    position: absolute;
+    left: 0;
+    bottom: -10rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    background: var(--color-foam);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    width: calc(33.33% - (31px / 3));
+    padding: 2rem 2.5rem 3.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__item-content {
+    margin-left: 2.9rem;
+  }
+  &__item-title {
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 140%;
+    color: var(--color-pacific-blue);
+    margin-bottom: 1rem;
+  }
+  &__item-subtitle {
+    font-size: 1.8rem;
+    line-height: 140%;
+    color: #000;
+  }
+}

@@ -1,0 +1,31 @@
+.consultations {
+  margin-top: 19rem;
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    margin: 6rem 0 4rem 0;
+  }
+  &__item {
+    width: calc(33.33% - 20px);
+  }
+  &__item-title {
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 1.2em;
+    text-align: center;
+  }
+  &__item-subtitle {
+    font-size: 1.8rem;
+    line-height: 1.22em;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  &__button {
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 1.2em;
+    padding: 1.55rem 13.6rem;
+    display: block;
+    margin: 0 auto;
+  }
+}

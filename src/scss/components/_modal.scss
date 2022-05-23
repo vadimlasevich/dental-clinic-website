@@ -1,0 +1,119 @@
+.modal-entry {
+  padding: 4rem 3rem 3rem 3rem;
+  display: none;
+  &__title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 120%;
+    margin-bottom: 2rem;
+  }
+  &__input {
+    width: 80%;
+  }
+  &__button {
+    display: block;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 9px 0;
+    width: 80%;
+  }
+}
+.modal-participation {
+  padding: 6rem 3rem 6.5rem 3rem;
+  display: none;
+  &__title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+    color: #099dba;
+    & span {
+      color: var(--color-gun-powder);
+    }
+  }
+  &__button {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #099dba;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 7.5px 10px 7.5px 35px;
+    margin: 65px auto 35px auto;
+    width: 80%;
+    & img {
+      margin-right: 21px;
+    }
+  }
+}
+.modal-price {
+  padding: 65px 30px 35px 30px;
+  display: none;
+  & img {
+    display: block;
+    margin: 0 auto;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 140%;
+    color: #099dba;
+    margin-bottom: 22px;
+  }
+  &__button {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #099dba;
+    display: block;
+    margin: 2rem auto 3rem auto;
+    padding: 7.5px 0;
+    width: 80%;
+  }
+}
+.modal-entry,
+.modal-participation,
+.modal-price {
+  text-align: center;
+  position: relative;
+}
+.modal {
+  max-width: 480px;
+  background: #f3fefe;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 120;
+}
+.modal-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    transform: translate(0, -50%);
+    width: 30px;
+    height: 1px;
+    background: #000;
+  }
+  &::after {
+    transform: rotate(45deg);
+  }
+  &::before {
+    transform: rotate(-45deg);
+  }
+}

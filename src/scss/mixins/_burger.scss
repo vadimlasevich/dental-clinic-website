@@ -1,0 +1,34 @@
+@mixin burger {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 10px;
+  cursor: pointer;
+  &::after,
+  &::before,
+  & span {
+    content: "";
+    position: absolute;
+    background: #099dba;
+    height: 6px;
+    width: 40px;
+    border-radius: 40px;
+  }
+  &::before {
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  &::after {
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-65%, 0);
+    width: 30px;
+  }
+}
