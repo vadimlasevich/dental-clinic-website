@@ -1,0 +1,704 @@
+@media screen and (max-width: 1400px) {
+  .stock-slider__slide {
+    min-width: calc(33.333% - (20px));
+  }
+  .stock-slider {
+    &__button-right {
+      right: -2rem;
+    }
+    &__button-left {
+      left: -2rem;
+    }
+  }
+  .technology__video video {
+    width: 100%;
+  }
+  .contacts {
+    &__image {
+      width: 150rem;
+      & img {
+        object-fit: cover;
+        object-position: 100% 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1270px) {
+  .header-top {
+    &__contacts-phones {
+      margin-left: 2rem;
+    }
+    &__address {
+      margin: 0 3rem;
+    }
+  }
+  .first-screen {
+    &__title {
+      width: 90%;
+    }
+    &__subtitle {
+      width: 60%;
+    }
+    &__items {
+      padding: 0 2rem;
+    }
+    &__text {
+      margin: 1.5em 0;
+    }
+  }
+  .technology {
+    &__info {
+      padding: 6rem 3rem 7.7rem 3rem;
+    }
+    &__item {
+      &:nth-child(2) {
+        margin-left: 5%;
+      }
+      &:nth-child(3) {
+        margin-left: 10%;
+      }
+      &:nth-child(4) {
+        margin-left: 15%;
+      }
+    }
+  }
+  .record {
+    &__image {
+      width: 150rem;
+      & img {
+        object-fit: cover;
+        object-position: 50% 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1100px) {
+  .first-screen {
+    &__title {
+      width: 100%;
+    }
+    &__text {
+      width: 50%;
+    }
+  }
+  .footer-burger {
+    display: flex;
+  }
+  .footer__menu-list {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  :root {
+    font-size: 8px;
+  }
+  .header-burger {
+    display: flex;
+  }
+  .header__menu {
+    display: none;
+  }
+  .logo-title {
+    margin-left: 1rem;
+  }
+  .logo img {
+    width: 6.6rem;
+    height: 6.6rem;
+  }
+  .section-subtitle {
+    width: 100%;
+  }
+  .first-screen {
+    &__content {
+      padding: 6rem 0 2rem;
+    }
+    &__title {
+      font-size: 3.6rem;
+      width: 70%;
+    }
+    &__subtitle {
+      width: 50%;
+    }
+    &__item {
+      width: calc(33.33% - (42px / 3));
+      padding: 2.5rem 2.1rem 4.1rem 2.1rem;
+      flex-direction: column;
+      text-align: center;
+    }
+    &__item-content {
+      margin: 2rem 0 0 0;
+    }
+    &__button {
+      position: absolute;
+      left: 50%;
+      bottom: 4rem;
+      transform: translate(-50%, 0);
+    }
+    &__items {
+      bottom: -23rem;
+    }
+  }
+  .consultations {
+    margin-top: 32rem;
+  }
+  .stock {
+    padding: 9rem 0 14.4rem 0;
+  }
+  .services {
+    &__items {
+      flex-direction: column;
+    }
+    &__item {
+      width: 100%;
+      height: 50rem;
+      padding: 3rem 4rem 2rem 3rem;
+    }
+    &__item-subtitle {
+      width: 50%;
+    }
+    &__item-img {
+      top: 4.6rem;
+      right: 4.8rem;
+    }
+  }
+  .technology {
+    &__description {
+      flex-direction: column;
+      position: relative;
+      padding: 6rem 2rem 19rem 2rem;
+    }
+    &__description-block-video {
+      width: 100%;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__video-block {
+      margin: 3rem auto 6rem auto;
+      width: 60%;
+    }
+    &__button {
+      position: absolute;
+      left: 50%;
+      bottom: 7.6rem;
+      transform: translate(-50%, 0);
+      padding: 1.4rem 3.65rem;
+    }
+    &__description-list {
+      width: 70%;
+      margin: 0 auto;
+    }
+    &__info {
+      padding: 3rem 2rem 1.3rem 2rem;
+    }
+    &__contacts {
+      margin-top: 2.1rem;
+    }
+    &__item {
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4) {
+        margin: 0 auto;
+      }
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .doctors {
+    &__item-title {
+      margin-bottom: 1.2rem;
+    }
+    &__item {
+      padding: 2.3rem 3rem 1.9rem 1.1rem;
+    }
+    &__content {
+      align-items: center;
+    }
+  }
+  .doctors-slider {
+    &__btn-next {
+      left: -10px;
+    }
+    &__btn-prev {
+      right: -10px;
+    }
+    &__slide-img {
+      left: 50%;
+      top: 14.5rem;
+      transform: translate(-50%, 0);
+      width: 25rem;
+      height: 32rem;
+    }
+    &__slide-description {
+      width: 100%;
+      padding: 2.1rem 2.8rem 0.7rem 2.8rem;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  .assistant {
+    padding: 9rem 0 12.8rem 0;
+    &__items {
+      flex-wrap: wrap;
+      max-width: 63em;
+      margin: 6rem auto 0 auto;
+      row-gap: 10rem;
+      column-gap: 3rem;
+    }
+    &__item {
+      width: 30%;
+    }
+  }
+  .reviews-slider {
+    &__button-left {
+      left: -10px;
+    }
+    &__button-right {
+      right: -10px;
+    }
+  }
+  .contacts {
+    &__image {
+      min-height: 56rem;
+      & img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+@media screen and (max-width: 880px) {
+  .header-top__working {
+    display: none;
+  }
+  .first-screen {
+    &__content {
+      padding: 3rem 0 6rem 0;
+    }
+    &__subtitle {
+      width: 60%;
+    }
+    &__text {
+      width: 60%;
+      margin-bottom: 7rem;
+    }
+    &__items {
+      bottom: -23rem;
+    }
+  }
+  .services__item {
+    height: 55rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .first-screen__button {
+    bottom: 7rem;
+  }
+  .doctors-slider__slide-img {
+    top: 18rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-top {
+    &__contacts-phones {
+      display: none;
+    }
+    &__contacts {
+      margin-left: auto;
+      margin-right: 3rem;
+    }
+    &__contacts-social {
+      flex-direction: column;
+    }
+    &__social-link:not(:last-child) {
+      margin: 0 0 1rem 0;
+    }
+    &__address {
+      margin: 0 0 0 5rem;
+    }
+  }
+  .header__top {
+    justify-content: flex-start;
+  }
+  .first-screen {
+    &__content {
+      padding: 3rem 0 10rem 0;
+    }
+    &__items {
+      bottom: -25rem;
+    }
+  }
+  .consultations__item {
+    width: 33.333%;
+  }
+  .stock-slider {
+    &__slide {
+      min-width: 46.7%;
+    }
+    &__button-left {
+      left: -1rem;
+    }
+    &__button-right {
+      right: -1rem;
+    }
+  }
+  .services__item-img {
+    width: 24rem;
+    height: 24rem;
+  }
+  .technology__item {
+    width: 100%;
+  }
+  .doctors {
+    &__item-img {
+      display: none;
+    }
+    &__item-info {
+      margin-left: 0;
+    }
+  }
+  .doctors-slider__slide {
+    height: 80rem;
+  }
+  .assistant__items {
+    max-width: 70em;
+  }
+  .reviews-slider__item {
+    min-width: 90%;
+    margin: 0 5rem;
+  }
+  .licenses-slider {
+    &__container {
+      margin: 0 5rem;
+    }
+    &__item {
+      min-width: 50%;
+    }
+  }
+  .about-description {
+    &__item {
+      &::before {
+        display: none;
+      }
+      &:nth-child(1),
+      &:nth-child(3) {
+        display: none;
+      }
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .about__description-content,
+  .about__description-image {
+    width: calc(50% - (20px / 2));
+  }
+  .about-slider__slide {
+    min-width: 50%;
+  }
+  .record {
+    &__image {
+      width: 110rem;
+    }
+    &__form {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .contacts-map {
+    display: block;
+  }
+  .contacts {
+    padding: 3rem 0 5rem 0;
+    background: #f3fefe;
+    &__image {
+      display: none;
+    }
+    & .container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__content {
+      position: relative;
+    }
+  }
+}
+@media screen and (max-width: 690px) {
+  .first-screen {
+    background-position: right;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+    }
+    &__items {
+      bottom: -30rem;
+    }
+    &__subtitle {
+      width: 80%;
+    }
+    &__text {
+      width: 80%;
+      margin-bottom: 4rem;
+    }
+  }
+  .consultations {
+    margin-top: 35rem;
+  }
+  .record__form {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .services__item {
+    height: auto;
+  }
+  .technology__description-list {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .technology {
+    &__item-number {
+      min-width: 5rem;
+      min-height: 5rem;
+      & span {
+        font-size: 3rem;
+        line-height: 110%;
+      }
+    }
+    &__video-block {
+      width: 90%;
+    }
+  }
+  .doctors {
+    &__items {
+      display: none;
+    }
+    &__slider {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  .doctors-slider {
+    &__btn-next {
+      left: -25px;
+    }
+    &__btn-prev {
+      right: -25px;
+    }
+  }
+  .assistant {
+    &__items {
+      max-width: 90%;
+      column-gap: 0;
+    }
+    &__item {
+      width: 45%;
+    }
+  }
+  .reviews-slider__item {
+    min-width: 85%;
+  }
+  .about {
+    &__description {
+      margin: 3rem 0 4.5rem 0;
+      flex-direction: column-reverse;
+    }
+    &__description-image {
+      width: 100%;
+    }
+    &__description-content {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  .contacts-map {
+    height: 40rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .header-top {
+    &__address,
+    &__contacts {
+      display: none;
+    }
+  }
+  .header-burger {
+    margin-left: auto;
+  }
+  .first-screen {
+    &__title,
+    &__subtitle,
+    &__text {
+      width: 90%;
+    }
+    &__items {
+      flex-direction: column;
+      top: 47rem;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: 80%;
+    }
+    &__item {
+      width: 100%;
+      margin: 0 auto;
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  .consultations {
+    margin-top: 85rem;
+    &__items {
+      flex-direction: column;
+    }
+    &__item {
+      width: 90%;
+      margin: 0 auto;
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+  .stock {
+    padding: 5rem 0 10rem 0;
+  }
+  .stock-slider__slide {
+    min-width: 87%;
+    margin: 0 4rem;
+  }
+  .services {
+    &__item-img {
+      width: 15rem;
+      height: 15rem;
+      top: 3rem;
+      right: 3rem;
+    }
+    &__item-subtitle {
+      width: 70%;
+    }
+    &__item-servises {
+      margin-left: 3rem;
+      width: 90%;
+    }
+  }
+  .reviews-slider {
+    &__item-img {
+      min-width: 10rem;
+    }
+    &__item {
+      min-width: 93%;
+      padding: 2rem;
+      margin: 0 2rem;
+      flex-direction: column;
+    }
+  }
+  .licenses-slider {
+    &__item {
+      min-width: 100%;
+    }
+    &__item-img img {
+      min-width: 100%;
+    }
+  }
+  .about-slider__slide {
+    min-width: 100%;
+  }
+  .contacts__content {
+    padding: 2rem;
+    max-width: 90%;
+    left: 0;
+  }
+}
+@media screen and (max-width: 493px) {
+  .first-screen__items {
+    top: 50rem;
+  }
+  .contacts-map {
+    height: 30rem;
+  }
+  .reviews__btn-vk {
+    bottom: -9rem;
+  }
+}
+@media screen and (max-width: 440px) {
+  .first-screen {
+    &__title,
+    &__subtitle,
+    &__text {
+      width: 100%;
+    }
+  }
+  .record {
+    &__image {
+      height: 55rem;
+    }
+    &__form {
+      width: 90%;
+    }
+  }
+  .technology {
+    &__buttons {
+      flex-direction: column;
+    }
+    &__btn-sing {
+      margin: 0;
+    }
+    &__btn {
+      width: 80%;
+      margin: 0 auto;
+    }
+    &__btn:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+    &__item {
+      flex-direction: column;
+    }
+    &__item-number {
+      margin: 0 0 1rem 0;
+    }
+  }
+  .services {
+    &__item-buttons {
+      flex-direction: column;
+    }
+    &__item-btn-sing {
+      margin: 0 0 1rem 0;
+    }
+    &__item-btn {
+      width: 80%;
+      margin: 0 auto;
+    }
+    &__item-btn:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+  .stock-slider__slide {
+    min-width: 90%;
+    margin: 0 2rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  .first-screen__items {
+    top: 52rem;
+  }
+  .reviews-slider__item {
+    min-width: 90%;
+  }
+}
+@media screen and (max-width: 390px) {
+  .first-screen__items {
+    top: 60rem;
+  }
+}
