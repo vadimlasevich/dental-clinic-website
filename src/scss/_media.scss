@@ -1,13 +1,10 @@
 @media screen and (max-width: 1400px) {
-  .stock-slider__slide {
-    min-width: calc(33.333% - (20px));
-  }
   .stock-slider {
-    &__button-right {
-      right: -2rem;
+    &__button-next {
+      right: -1rem;
     }
-    &__button-left {
-      left: -2rem;
+    &__button-prev {
+      left: -1rem;
     }
   }
   .technology__video video {
@@ -20,6 +17,14 @@
         object-fit: cover;
         object-position: 100% 0;
       }
+    }
+  }
+  .doctors-slider {
+    &__button-next {
+      right: -10px;
+    }
+    &__button-prev {
+      left: -10px;
     }
   }
 }
@@ -69,6 +74,20 @@
         object-fit: cover;
         object-position: 50% 0;
       }
+    }
+  }
+  .reviews-slider {
+    &__item-img {
+      min-width: 10rem;
+    }
+    &__item-info {
+      margin: 0 0 2rem 1.5rem;
+    }
+    &__button-prev {
+      left: -10px;
+    }
+    &__button-next {
+      right: -10px;
     }
   }
 }
@@ -218,12 +237,6 @@
     }
   }
   .doctors-slider {
-    &__btn-next {
-      left: -10px;
-    }
-    &__btn-prev {
-      right: -10px;
-    }
     &__slide-img {
       left: 50%;
       top: 14.5rem;
@@ -249,14 +262,6 @@
     }
     &__item {
       width: 30%;
-    }
-  }
-  .reviews-slider {
-    &__button-left {
-      left: -10px;
-    }
-    &__button-right {
-      right: -10px;
     }
   }
   .contacts {
@@ -290,6 +295,21 @@
   }
   .services__item {
     height: 55rem;
+  }
+  .modal-participation {
+    padding: 6rem 1.5rem 3rem 1.5rem;
+    &__title {
+      font-size: 20px;
+    }
+    &__button {
+      font-size: 17px;
+      padding: 5px 10px;
+      margin: 30px auto 20px auto;
+      justify-content: center;
+      & img {
+        margin-right: 25px;
+      }
+    }
   }
 }
 @media screen and (max-width: 800px) {
@@ -333,16 +353,8 @@
   .consultations__item {
     width: 33.333%;
   }
-  .stock-slider {
-    &__slide {
-      min-width: 46.7%;
-    }
-    &__button-left {
-      left: -1rem;
-    }
-    &__button-right {
-      right: -1rem;
-    }
+  .stock-slider__slide {
+    min-width: 50%;
   }
   .services__item-img {
     width: 24rem;
@@ -365,15 +377,15 @@
   .assistant__items {
     max-width: 70em;
   }
-  .reviews-slider__item {
-    min-width: 90%;
-    margin: 0 5rem;
+  .reviews-slider__slide {
+    min-width: 100%;
+    padding: 2.5rem 4rem;
   }
   .licenses-slider {
-    &__container {
+    &__wrapper {
       margin: 0 5rem;
     }
-    &__item {
+    &__slide {
       min-width: 50%;
     }
   }
@@ -427,13 +439,22 @@
       position: relative;
     }
   }
+  .modal-price {
+    padding: 60px 15px 30px 15px;
+    &__title {
+      font-size: 23px;
+    }
+    &__button {
+      font-size: 19px;
+    }
+  }
 }
 @media screen and (max-width: 690px) {
   .first-screen {
     background-position: right;
     position: relative;
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: 0;
@@ -466,6 +487,14 @@
   .technology__description-list {
     width: 90%;
   }
+  .modal-participation {
+    &__button {
+      font-size: 14px;
+      & img {
+        margin-right: 20px;
+      }
+    }
+  }
 }
 @media screen and (max-width: 576px) {
   .technology {
@@ -491,11 +520,11 @@
     }
   }
   .doctors-slider {
-    &__btn-next {
-      left: -25px;
-    }
-    &__btn-prev {
+    &__button-next {
       right: -25px;
+    }
+    &__button-prev {
+      left: -25px;
     }
   }
   .assistant {
@@ -507,8 +536,14 @@
       width: 45%;
     }
   }
-  .reviews-slider__item {
-    min-width: 85%;
+  .reviews-slider {
+    &__item-content {
+      flex-direction: column;
+    }
+    &__item-img {
+      max-width: 9rem;
+      margin-bottom: 2rem;
+    }
   }
   .about {
     &__description {
@@ -525,6 +560,32 @@
   }
   .contacts-map {
     height: 40rem;
+  }
+  .modal-entry {
+    padding: 6rem 3rem 3rem 3rem;
+    &__title {
+      font-size: 22px;
+      margin-bottom: 2rem;
+    }
+    &__input {
+      width: 80%;
+    }
+    &__button {
+      font-size: 18px;
+      padding: 9px 0;
+      width: 80%;
+    }
+  }
+  .modal-price {
+    &__title {
+      font-size: 20px;
+    }
+    &__button {
+      font-size: 18px;
+    }
+  }
+  .modal {
+    width: 80%;
   }
 }
 @media screen and (max-width: 550px) {
@@ -575,8 +636,7 @@
     padding: 5rem 0 10rem 0;
   }
   .stock-slider__slide {
-    min-width: 87%;
-    margin: 0 4rem;
+    min-width: 100%;
   }
   .services {
     &__item-img {
@@ -593,19 +653,8 @@
       width: 90%;
     }
   }
-  .reviews-slider {
-    &__item-img {
-      min-width: 10rem;
-    }
-    &__item {
-      min-width: 93%;
-      padding: 2rem;
-      margin: 0 2rem;
-      flex-direction: column;
-    }
-  }
   .licenses-slider {
-    &__item {
+    &__slide {
       min-width: 100%;
     }
     &__item-img img {
@@ -630,6 +679,15 @@
   }
   .reviews__btn-vk {
     bottom: -9rem;
+  }
+  .modal-entry {
+    padding: 6rem 1.5rem 3rem 1.5rem;
+    &__title {
+      font-size: 16px;
+    }
+    &__button {
+      font-size: 14px;
+    }
   }
 }
 @media screen and (max-width: 440px) {
@@ -684,17 +742,10 @@
       margin-bottom: 1rem;
     }
   }
-  .stock-slider__slide {
-    min-width: 90%;
-    margin: 0 2rem;
-  }
 }
 @media screen and (max-width: 430px) {
   .first-screen__items {
     top: 52rem;
-  }
-  .reviews-slider__item {
-    min-width: 90%;
   }
 }
 @media screen and (max-width: 390px) {

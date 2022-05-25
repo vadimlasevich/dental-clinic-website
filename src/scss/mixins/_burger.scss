@@ -10,15 +10,17 @@
   justify-content: center;
   padding: 15px 10px;
   cursor: pointer;
+  z-index: 120;
   &::after,
   &::before,
   & span {
-    content: "";
+    content: '';
     position: absolute;
     background: #099dba;
     height: 6px;
     width: 40px;
     border-radius: 40px;
+    transition: all 0.5s;
   }
   &::before {
     top: 15px;

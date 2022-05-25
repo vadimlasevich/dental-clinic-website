@@ -27,7 +27,7 @@
     display: flex;
     align-items: center;
     &::before {
-      content: url("../images/about-item-img.png");
+      content: url('../images/about-item-img.png');
       margin-right: 1rem;
     }
     &:not(:last-child) {
@@ -39,12 +39,12 @@
   margin: 3rem 0;
 }
 .about-slider {
-  &__container {
+  &__wrapper {
     overflow: hidden;
   }
-  &__slides {
+  &__container {
     display: flex;
-    justify-content: space-between;
+    transition: all 0.8s ease;
   }
   &__slide {
     min-width: 25%;
@@ -57,10 +57,10 @@
     top: 50%;
     transform: translate(0, -50%);
   }
-  &__button-left {
+  &__button-prev {
     left: 0;
   }
-  &__button-right {
+  &__button-next {
     right: 0;
   }
 }

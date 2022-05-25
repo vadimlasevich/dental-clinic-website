@@ -17,15 +17,19 @@
   }
 }
 .reviews-slider {
-  &__container {
+  &__wrapper {
     overflow: hidden;
   }
-  &__items {
+  &__container {
     display: flex;
-    justify-content: space-between;
+    transition: all 0.8s ease;
   }
-  &__item {
-    width: calc(50% - (30px / 2));
+  &__slide {
+    min-width: 50%;
+    padding: 2.5rem 3rem;
+  }
+  &__item-content {
+    height: 100%;
     background: #f3fefe;
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
     border-radius: 20px;
@@ -34,7 +38,7 @@
     padding: 4rem 3rem 3.5rem 3rem;
     position: relative;
   }
-  &__item-content {
+  &__item-info {
     margin: 0 0 2rem 3.1rem;
   }
   &__item-title {
@@ -65,10 +69,10 @@
     top: 50%;
     transform: translate(0, -50%);
   }
-  &__button-left {
+  &__button-prev {
     left: -20px;
   }
-  &__button-right {
+  &__button-next {
     right: -20px;
   }
 }

@@ -6,14 +6,14 @@
   }
 }
 .licenses-slider {
-  &__container {
+  &__wrapper {
     overflow: hidden;
   }
-  &__items {
+  &__container {
     display: flex;
-    justify-content: space-between;
+    transition: all 0.8s ease;
   }
-  &__item {
+  &__slide {
     min-width: 25%;
   }
   &__button {
@@ -21,10 +21,10 @@
     top: 50%;
     transform: translate(0, -50%);
   }
-  &__button-left {
+  &__button-prev {
     left: 0;
   }
-  &__button-right {
+  &__button-next {
     right: 0;
   }
   &__dots {

@@ -5,9 +5,10 @@
 }
 .shadowed {
   @include shadowed;
+  z-index: 140;
 }
-.burger {
-  @include burger;
+.shadowed-burger {
+  @include shadowed;
 }
 .btn-reset {
   @include btn-reset;
@@ -17,6 +18,25 @@
 }
 .shadowed-active {
   display: block;
+}
+.burger {
+  @include burger;
+}
+.burger-rotate {
+  & span {
+    transform: scale(0);
+  }
+  &::before {
+    transform: rotate(-45deg);
+    top: 50%;
+    left: 10px;
+  }
+  &::after {
+    width: 40px;
+    transform: rotate(45deg);
+    bottom: 40%;
+    left: 10px;
+  }
 }
 .menu {
   display: flex;
@@ -75,6 +95,7 @@
   align-items: center;
   justify-content: center;
   position: absolute;
+  background: var(--color-charlotte);
 }
 .btn-empty {
   background: rgba(255, 255, 255, 0.6);

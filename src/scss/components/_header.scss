@@ -30,7 +30,7 @@
     display: flex;
     align-items: center;
     &::before {
-      content: url("../images/pin.svg");
+      content: url('../images/pin.svg');
       min-width: 12.6px;
       height: 17.8px;
       margin-right: 0.77rem;
@@ -52,7 +52,7 @@
     display: flex;
     align-items: center;
     &::before {
-      content: url("../images/time.svg");
+      content: url('../images/time.svg');
       width: 22px;
       height: 22px;
       margin-right: 0.8rem;

@@ -58,11 +58,12 @@
   }
 }
 .doctors-slider {
-  &__container {
+  &__wrapper {
     overflow: hidden;
   }
-  &__slides {
+  &__container {
     display: flex;
+    transition: all 0.8s ease;
   }
   &__slide {
     min-width: 100%;
@@ -78,6 +79,7 @@
     line-height: 1.17em;
   }
   &__slide-subtitle {
+    font-size: 1.8rem;
     margin-top: 1.1rem;
   }
   &__slide-position {
@@ -120,19 +122,18 @@
     bottom: 0;
     z-index: 1;
   }
-  &__btn {
-    background: #fff;
+  &__button {
     z-index: 20;
   }
-  &__btn-next {
-    top: 30%;
-    left: -20px;
-  }
-  &__btn-prev {
+  &__button-next {
     top: 30%;
     right: -20px;
   }
-  &__button {
+  &__button-prev {
+    top: 30%;
+    left: -20px;
+  }
+  &__button-entry {
     display: block;
     font-weight: 600;
     font-size: 2rem;
